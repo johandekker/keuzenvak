@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+	<head>
+		<meta charset="URF-8">
+		<title>objecten</title>
+		
+	</head>
+	
+	<body>
+
+		<script>
+			//opdr 1
+			einddatum =prompt("wat is de eind datum JJJJ-MM-DD?");
+			
+			//opdr 2
+			var deadline = new Date("2020-02-02");
+			
+			//opdr 3
+			document.write("<br> de deadline is: " + deadline);
+			
+			//opdr 4
+			nu = Date.now()
+			
+			//opdr 5
+			var dag = 86400000;
+			
+			//opdr 6
+			var resterende = ((deadline - nu) / dag);
+			
+			//toon
+			document.write("<br> er zijn nog: " + resterende.toFixed(0) + "dagen te gaan!");
+			
+		</script>
+
+	</body>
+
+</html>

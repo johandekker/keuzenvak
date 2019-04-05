@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+	<head>
+		<meta charset="URF-8">
+		<title>objecten</title>
+		
+	</head>
+	
+	<body>
+
+		<script>
+			var vandaag = new Date();
+			document.write(
+			'<br>opgaven46: ' + vandaag);
+			//
+			
+			var nu = Date.now();
+			var eenDag = 86400000;
+			var morgen = new Date(nu + eenDag);
+			document.write("<br>opgaven 47: de datum morgen is: " + morgen);
+			//
+			
+			// datum met date string
+			var schooljaar = new Date("2015-09-04");
+			
+			// datum met tijd string
+			var wintertijd = new Date("2015-10-28T03:00:00");
+			
+			document.write("<br>opgaven 48: begin wintertijd is: "+ wintertijd);
+			//
+			
+			var geboorteDatum = new Date("1996-01-23");
+			document.write("<br>mijn gebootedatum is: " + geboorteDatum);
+			//
+			
+			beginSchooldag = new Date(2015,8,9,8,30);
+			document.write("<br>opgaven 49: begin schooldag: " +beginSchooldag);
+			//
+			
+			nu =Date.now();
+			document.write("<br>opgaven 50: nu: " + nu);
+			var dagen = ((nu -beginSchooldag) / eenDag);
+			document.write("<br>aantal dagen sinds begin schooldag: " + dagen.toFixed(0));
+			
+			
+		</script>
+
+	</body>
+
+</html>

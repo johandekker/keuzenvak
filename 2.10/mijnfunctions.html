@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>mijn functies</title>
+	<!--dit script werkt met functies
+		auteur: johan dekker -->
+		<script src = "mijnfunctions.js"></script>
+		<script>
+			function verdubbel(inputgetal) {
+			outputgetal = inputgetal * 2;
+			return(outputgetal);
+			}
+		</script>
+</head>
+<body>
+	<script>
+		mijngetal = prompt("voer een getal in: ");
+		resultaat = verdubbel(mijngetal);
+		document.write("<br>input-getal: " + mijngetal);
+		document.write("<br>output-getal: " + resultaat);
+		afmelden();
+		begroeten();
+		
+		document.write("<br> de dollarkoers is: " + dollarKoers());
+		document.write("<br> de eurokoers is: " + euroKoers());
+		document.write("<br> 100 dollar is:" + dollar_naar_euro(100) + " euro\'s");
+		</script>
+</body>
+</html>

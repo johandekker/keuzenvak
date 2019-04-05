@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+	<head>
+		<meta charset="URF-8">
+		<title>objecten</title>
+		
+	</head>
+	
+	<body>
+
+		<script>
+			var laptops = [];
+			laptops ['macbook'] =
+			{'model':'air', 'voorraad': 2000, 'prijs': 1090};
+			document.write(
+			'<br>opgaven 42: laptops array aangemaakt');
+			laptops ['asusbook'] = 
+			{'model':'wind', 'voorraad': 1000, 'prijs': 990};
+			laptops ['dellbook'] = 
+			{'model':'fire', 'voorraad': 987, 'prijs': 990};
+			document.write(
+			'<br>opgave 43: laptop array uitgebreid');
+			//
+			document.write(
+			'<br>opgaven 44: de laptops array heeft ' + laptops.lenght + ' elementen');
+			//
+			var mac = 'macbook' in laptops;
+			var asus = 'asusbook' in laptops;
+			var dell = 'dellbook' in laptops;
+			document.write(
+			'<br>opgave 45: de variable mac is: ' + mac);
+			document.write(
+			'<br>mac specificaties ------- ' +
+			'<br>model: '    + laptops['macbook']['model'] +
+			'<br>voorraad: ' + laptops['macbook']['voorraad'] +
+			'<br>prijs: '    + laptops['macbook']['prijs']);
+		</script>
+
+	</body>
+
+</html>

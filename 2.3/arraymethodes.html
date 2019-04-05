@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<title>array methodes</title>
+	</head>
+	<body>
+		<script>
+			var studenten = new Array('zakaria', 'albert', 'hamsa', 'mike', 'pieter');
+			document.write('<br> opgave 24: studenten: ' + studenten);
+
+			team = studenten;
+			document.write('<br>opgave25: team ' + team);
+			
+			team[0] = 'umut';
+			document.write(
+			'<br>opgave 26: element [0] is gewijzigd: ' + studenten);
+			
+			studenten.shift();
+			document.write(
+			'<br>opgave 27: resultaat van shift: ' + studenten);
+			
+			studenten.unshift('jozef', 'umut');
+			document.write(
+			'<br>opgave 28: resultaat van unshift ' +studenten);
+			
+			studenten.pop();
+			document.write(
+			'<br>opgave 29: resultaat van pop: ' +studenten);
+			
+			studenten.push('pieter', 'david');
+			document.write(
+			'<br>opgave 30: resultaat van push: ' +studenten);
+			
+			klas = studenten.splice(2,4);
+			document.write(
+			'<br>opgave 31: resultaat <br> studenten: ' + studenten + '<br> klas: ' + klas);
+			
+			studenten.sort();
+			document.write(
+			'<br>opgave 32: resultaat van sort: ' + studenten);
+			
+			studenten.reverse();
+			document.write(
+			'<br>opgave 3: resultaat van reverse: ' + klas);
+			
+			index = studenten.indexOf('jozef');
+			document.write(
+			'<br>opgave 34: resultaat van indexOf:' + index);
+			
+			delete klas[2];
+			document.write(
+			'<br>opgave 35 resultaat van delete: ' + klas);
+			
+			document.write(
+			'<br>opgave 36: het datatype van het gedelete element is: ' + typeof klas[2]);
+			
+			klas.splice(2,1);
+			document.write(
+			'<br>opgave 37: element voledig verwijderd: ' + klas);
+			
+			index = studenten.indexOf('jozef');
+			studenten.splice(index,1);
+			document.write(
+			'<br>opgave 38: specefieke student verwijderd: ' + studenten);
+			
+			klas2 = klas.splice();
+			document.write(
+			'<br>opgave 39: resultaat van kopieren: ' + klas2);
+			
+			var myString = klas.join('|');
+			document.write(
+			'<br>opgave 40: resultaat van join: ' + myString);
+			
+			var myArray = myString.split('|');
+			document.write(
+			'<br>opgave 41: resultaat van split: ' + myArray);
+			
+			
+		</script>
+	</body>
+
+</html>
