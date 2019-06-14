@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Flashtix</title>
+
+	<meta name="viewport"content = "width=device-width, initial-scale=1">
+
+	 
+
+	<link   rel="stylesheet"  href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+	</script>
+	<link rel="stylesheet" href="flashtix.css">
+
+	<script src="flashtix.js"></script>
+
+</head>
+
+<body>
+
+<!-- homepage -->
+
+<div data-role="page" class="page" id="homepage">
+
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">
+
+			<div class="ui-grid-b">
+
+				 <div class="ui-block-a">
+					<a class="knop" href="#homepage"
+						data-role="button"data-icon="home"
+						data-iconpos="left">Home
+					</a>
+				</div>
+				   
+				 <div class="ui-block-b">
+					<a class="knop" href="#homepage"
+						data-role="button"> Welkom
+					</a>
+				</div>
+
+				<div class="ui-block-c">
+					<a class="knop" href="#lastminutepage"
+						data-role="button"data-icon="arrow-r"data-iconpos="left"
+						data-transition="slidedown"> Lastminute
+					</a>
+
+				</div>
+
+				<!-- homecontent -->
+
+				<div class="content" id="homecontent" data-role="content">
+
+					<br><br>
+
+					<h1>Flashtix</h1>
+
+					<img id="poster" class="poster" src="poster.jpg">
+
+				</div><!-- einde homecontent -->          
+
+			</div> <!-- /grid-b -->
+
+		</div> <!-- nav -->
+
+	</div> <!-- /header -->
+
+</div><!-- /homepage -->
+
+<div data-role="page" class="page" id="lastminutepage">
+
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#homepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+						
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+
+				<a class="button" href="#bestelpage"
+					data-role="button"data-icon="plus"
+					data-iconpos="left">Bestel
+				</a>
+			</div>        
+		   
+		</div>
+	</div><!--/header-->
+			
+	<div data-role="content" class="content" id="lastminutecontent"><br>
+		<ul data-role="listview">
+			<li id="pop" data-role="list-divider" 
+				data-theme="b">POP</li>
+			<li id="#shakira-concert">
+				<a href="#shakira-biopage">
+					<img class="poster" src="shakiraposter.jpg">
+					<h3>shakira</h3>
+					<p>AmsterdamArena</p>
+					<p>Vandaag 22:00 uur</p>
+				</a>
+				<a href="#shakira-biopage" 
+					data-transition="flip">
+				</a>
+			</li>
+		</ul><!---/listview-->
+		
+	</div><!---/content--> 
+		
+	<div data-role="content" class="content" id="lastminutecontent"><br>
+		<ul data-role="listview">
+			<li id="pop" data-role="list-divider" 
+				data-theme="b">POP</li>
+			<li id="#john-concert">
+				<a href="#John-biopage">
+					<img class="poster" src="johnposter.jpg">
+					<h3>John Mayer</h3>
+					<p>Ziggo Dome</p>
+					<p>Vandaag 21:00 uur</p>
+				</a>
+				<a href="#john-biopage" 
+					data-transition="flip">
+				</a>
+			</li>
+		</ul><!---/listview-->
+		
+	</div><!---/content-->
+		
+	<div data-role="content" class="content" id="lastminutecontent"><br>
+		<ul data-role="listview">
+			<li id="pop" data-role="list-divider" 
+				data-theme="b">Hardstyle</li>
+			<li id="#g4h-concert">
+				<a href="#g4h-biopage">
+					<img class="poster" src="g4hposter.jpg">
+					<h3>Gunz For Hire</h3>
+					<p>Gelderdome</p>
+					<p>Vandaag 22:00 uur</p>
+				</a>
+				<a href="#g4h-biopage" 
+					data-transition="flip">
+				</a>
+			</li>
+		</ul><!---/listview-->
+	</div><!---/content-->
+		
+	<div data-role="content" class="content" id="lastminutecontent"><br>
+		<ul data-role="listview">
+			<li id="pop" data-role="list-divider" 
+				data-theme="b">Hardbass</li>
+			<li id="#xsproject-concert">
+				<a href="#xsproject-biopage">
+					<img class="poster" src="xsprojectposter.jpg">
+					<h3>XS Project</h3>
+					<p>club Nora</p>
+					<p>Vandaag 22:00 uur</p>
+				</a>
+				<a href="#g4h-biopage" 
+					data-transition="flip">
+				</a>
+			</li>
+		</ul><!---/listview-->
+	</div><!---/content-->
+
+		<!-- footer -->
+	<div class="footer" data-role="footer" data-theme="b">
+		<div class="nav" data-role="controlgroup">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a class="knop" href="#agendapage"
+						data-role="button"data-icon="grid"
+						data-iconpos="left">Agenda test</a>
+
+				</div>
+
+				<div class="ui-block-b">
+					<a class="knop" href="#locationpage"
+					data-role="button"data-icon="search"
+					data-iconpos="left">Location test</a>
+
+				</div>
+
+			</div><!-- /grid-a -->
+
+		</div><!-- /nav -->
+
+	</div><!-- /footer -->
+
+
+</div><!-- einde lastminutpage -->
+
+<div data-role="page" class="page" id="shakira-biopage">
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#lastminutepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+						
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+
+				<a class="button" href="#bestelpage"
+					data-role="button" data-icon="plus"
+					data-iconpos="left">Bestel
+				</a>
+			</div>        
+		   
+		</div>
+	</div><!--/header-->
+
+	
+	<div data-role="content">
+		<video controls="controls" width="90%"
+			preload id="video" poster="shakiraposter.jpg">
+				<source src="shakira.mp4" type="video/mp4">
+				<source src="shakira.webm" type="video/webm">
+				<source src="shakira.3gp" type="video/3gp">
+		</video> <!-- einde video-->
+			<p>
+				Shakira werd op 2 februari 1977 geboren in de kustplaats
+				Barranquilla, een van de grootste steden van Colombia. Haar
+				volledige naam is Shakira Isabel Mebarak Ripoll; Mebarak
+				is de achternaam van haar Libanese vader, Ripoll die van
+				haar Colombiaanse moeder. Shakira’s voornaam is Arabisch
+				en betekent 'dankbaar'.
+			</p> <!-- einde content-->
+			
+		<div class="footer" data-role="footer" data-theme="b">
+			<div class="nav" data-role="controlgroup">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a class="knop" href="#agendapage"
+							data-role="button"data-icon="grid"
+							data-iconpos="left">Agenda test</a>
+
+					</div>
+
+					<div class="ui-block-b">
+						<a class="knop" href="#locationpage"
+						data-role="button"data-icon="search"
+						data-iconpos="left">Location test</a>
+
+					</div>
+
+				</div><!-- /grid-a -->
+
+			</div><!-- /nav -->
+
+		</div><!-- footer -->
+	</div><!-- einde content-->
+</div> <!-- einde shakira bio page-->
+
+<div data-role="page" class="page" id="John-biopage">
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#lastminutepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+						
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+
+				<a class="button" href="#bestelpage"
+					data-role="button" data-icon="plus"
+					data-iconpos="left">Bestel
+				</a>
+			</div>        
+		   
+		</div>
+	</div><!--/header-->
+
+	
+	<div data-role="content">
+		<video controls="controls" width="90%"
+			preload id="video" poster="johnposter.jpg">
+				<source src="John.mp4" type="video/mp4">
+				<source src="shakira.webm" type="video/webm">
+				<source src="shakira.3gp" type="video/3gp">
+		</video> <!-- einde video-->
+			<p>
+				John Clayton Mayer (Bridgeport (Connecticut), 16 oktober 1977)
+				is een Amerikaanse singer-songwriter en gitarist die in Montana
+				woont. Na afbreken van zijn studie op het Berklee College of Music
+				verhuisde hij in 1997 naar Atlanta (Georgia) waar hij zijn talent
+				doorontwikkelde en naam begon te maken. Zijn eerste albums Room for
+				Squares en Heavier Things verkochten goed. In 2003 won hij tijdens
+				de Grammy Awards de prijs voor de "Best Male Pop Vocal Performance"
+				voor "Your Body Is a Wonderland".
+			</p> <!-- einde content-->
+			
+		<div class="footer" data-role="footer" data-theme="b">
+			<div class="nav" data-role="controlgroup">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a class="knop" href="#agendapage"
+							data-role="button"data-icon="grid"
+							data-iconpos="left">Agenda test</a>
+
+					</div>
+
+					<div class="ui-block-b">
+						<a class="knop" href="#locationpage"
+						data-role="button"data-icon="search"
+						data-iconpos="left">Location test</a>
+
+					</div>
+
+				</div><!-- /grid-a -->
+
+			</div><!-- /nav -->
+
+		</div><!-- footer -->
+	</div><!-- einde content-->
+</div> <!-- einde John mayer bio page-->
+
+<div data-role="page" class="page" id="g4h-biopage">
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#lastminutepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+						
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+
+				<a class="button" href="#bestelpage"
+					data-role="button" data-icon="plus"
+					data-iconpos="left">Bestel
+				</a>
+			</div>        
+		   
+		</div>
+	</div><!--/header-->
+
+	
+	<div data-role="content">
+		<video controls="controls" width="90%"
+			preload id="video" poster="g4hposter.jpg">
+				<source src="g4h.mp4" type="video/mp4">
+				<source src="shakira.webm" type="video/webm">
+				<source src="shakira.3gp" type="video/3gp">
+		</video> <!-- einde video-->
+			<p>
+				Nu kunnen ze er om lachen, maar zeven jaar geleden
+				was het even schrikken. Adaro (Thijs Ploegmakers) 
+				en Ran-D (Randy Wieland) sloegen begin dat jaar de 
+				handen ineen, produceerden een bulk tracks en waren 
+				vastberaden om hardstyleminnend Nederland te verrassen 
+				met nieuw, samen geproduceerd materiaal.
+			</p> <!-- einde content-->
+			
+		<div class="footer" data-role="footer" data-theme="b">
+			<div class="nav" data-role="controlgroup">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a class="knop" href="#agendapage"
+							data-role="button"data-icon="grid"
+							data-iconpos="left">Agenda test</a>
+
+					</div>
+
+					<div class="ui-block-b">
+						<a class="knop" href="#locationpage"
+						data-role="button"data-icon="search"
+						data-iconpos="left">Location test</a>
+
+					</div>
+
+				</div><!-- /grid-a -->
+
+			</div><!-- /nav -->
+
+		</div><!-- footer -->
+	</div><!-- einde content-->
+</div> <!-- einde g4h bio page-->
+
+<div data-role="page" class="page" id="xsproject-biopage">
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#lastminutepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+						
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+
+				<a class="button" href="#bestelpage"
+					data-role="button" data-icon="plus"
+					data-iconpos="left">Bestel
+				</a>
+			</div>        
+		   
+		</div>
+	</div><!--/header-->
+
+	
+	<div data-role="content">
+		<video controls="controls" width="90%"
+			preload id="video" poster="xsprojectposter.jpg">
+				<source src="xsproject.mp4" type="video/mp4">
+				<source src="shakira.webm" type="video/webm">
+				<source src="shakira.3gp" type="video/3gp">
+		</video> <!-- einde video-->
+			<p>
+				
+				XS Project is een Russisch duet met muziek in de
+				stijl van hard bass, opgericht in 2002. Het team is
+				de oprichter van het promotionele bedrijf Progressive Factor,
+				dat zich bezighoudt met het promoten van DJ's en het organiseren
+				van evenementen.
+
+				XS Project bracht 8 albums uit, daarnaast werden hun tracks vaak
+				gebruikt bij het compileren van de LenEnergia-compilaties, die in
+				2003 voor het eerst werd uitgebracht via Prosvet Records.
+
+				
+			</p> <!-- einde content-->
+			
+		<div class="footer" data-role="footer" data-theme="b">
+			<div class="nav" data-role="controlgroup">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a class="knop" href="#agendapage"
+							data-role="button"data-icon="grid"
+							data-iconpos="left">Agenda test</a>
+
+					</div>
+
+					<div class="ui-block-b">
+						<a class="knop" href="#locationpage"
+						data-role="button"data-icon="search"
+						data-iconpos="left">Location test</a>
+
+					</div>
+
+				</div><!-- /grid-a -->
+
+			</div><!-- /nav -->
+
+		</div><!-- footer -->
+	</div><!-- einde content-->
+</div> <!-- einde xs project bio page-->
+
+<div data-role="page" class="page" id="bestelpage">
+	<div Class="header" data-role="header" data-theme="b">
+
+		<div class="nav" data-role="controlgroup">	
+
+			 <div>
+				<a class="knop" href="#lastminutepage"
+					data-role="button"data-icon="arrow-l"
+					data-iconpos="left">vorige
+				</a>
+							
+				<a class="button" href="#homepage"
+					data-role="button"data-icon="home"
+					data-iconpos="left">Home
+				</a>
+					
+				<a class="button" href="#nieuwspage"
+					data-role="button"data-icon="plus"
+					data-iconpos="left">nieuwspagina
+				</a>
+			</div>        
+			   
+		</div>
+	</div>
+	
+	<form name="form" id="form">
+		<p>kies een concert</p>
+		<input type="radio" name="concert" value="shakira">
+		<label for="shakira">shakira</label>
+		<input type="radio" name="concert" value="John Mayer">
+		<label for="shakira">John Mayer</label>	
+		<input type="radio" name="concert" value="Gunz For Hire">
+		<label for="shakira">Gunz For Hire</label>		
+		<input type="radio" name="concert" value="xsproject">
+		<label for="shakira">XS Project</label>
+		<label for="aantal">aantal sterren</label>
+		<input type="range" name="aantal" id="aantal" min="1" max="3">
+		
+		<div data-role="fieldcontain">
+			<input class="required" type="text" id="naam"
+			name="naam" placeholder="Typ hier je naam.">
+			<label for="minderjarigen">minderjarigen</label>
+			<select name="slider" id="minderjarig" data-role="slider"
+				data-mini="true">
+				<option value ="nee">nee</option>
+				<option value ="ja">ja</option>	
+			</select>
+			
+			<input class="required" type="tel" id="tel"
+			name="tel" placeholder="phone number">
+			<br>
+			
+			<input class="required" type="email" id="email"
+			name="email" placeholder="E-mail">
+			<br>
+			
+			<input type="text" name="plaats"
+			id="plaats" list="steden" placeholder="woonplaats">
+				<datalist id="steden">
+					<option value="Almere">
+					<option value="Amstelveen">
+					<option value="Amsterdam">
+					<option value="Den Haag">
+					<option value="Hilversum">
+					<option value="Leeuwarden">
+					<option value="Maastricht">
+					<option value="Naarden">
+					<option value="Utrecht">
+				</datalist>
+			<br>
+		
+			<textarea 	cols="35" rows="4" name="reactie" id="reactie"
+						placeholder="Mail ons je reactie.">
+			</textarea>
+				<div data-role="controlgroup">
+					<p>kies een gratis abbonement</p>
+					<input type="checkbox" name="news" id="news">
+					<label for="news">flashtixNewsletter</label>
+					
+					<input type="checkbox" name="gids" id="gids">
+					<label for="gids">uitgids</label>
+					
+					<input type="checkbox" name="fest" id="fest">
+					<label for="fest">fest</label>
+				</div><!-- einde controlgroup-->
+		</div> <!--einde field container-->
+		<input type="submit" id="submit" value="verzend">
+	</form><!--einde form -->
+</div><!--einde bestelpage -->
+
+<!-- footer -->
+	<div class="footer" data-role="footer" data-theme="b">
+		<div class="nav" data-role="controlgroup">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a class="knop" href="#agendapage"
+						data-role="button"data-icon="grid"
+						data-iconpos="left">Agenda test</a>
+
+				</div>
+
+				<div class="ui-block-b">
+					<a class="knop" href="#locationpage"
+					data-role="button"data-icon="search"
+					data-iconpos="left">Location test</a>
+
+				</div>
+
+			</div><!-- /grid-a -->
+
+		</div><!-- /nav -->
+
+	</div><!-- footer -->
+
+</body>
+
+</html>
